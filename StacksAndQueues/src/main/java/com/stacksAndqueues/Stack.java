@@ -6,7 +6,9 @@ package com.stacksAndqueues;
  * 1. We have created a method isEmpty to check if the LinkedList or Stack is empty or not.
  * 2. We have created the addElement method to add the data to the Stack.
  * 3. Method display to print the stack
+ * 4. Method for peck and pop elements from stack still the stack get empty
  */
+
 public class Stack {
 	
 	public static Node head;
@@ -51,5 +53,34 @@ public class Stack {
 			currentNode = currentNode.next;
 		}
 	
-	}	
+	}
+	
+	
+	/**
+	 * [2] Method to peck element from stack
+	 * 1. Check if stack is not null then print top element from stack
+	 * 2. else print Stack is empty
+	 * 
+	 */
+	public void peak() {
+		if(head != null) {
+			System.out.println("\nTop of the Stack is " + head.data);
+		}else {
+			System.out.println("Stack is Empty");
+			return;
+		}
+	}
+	
+	/**
+	 *[2]  Method to top element from stack
+	 * 1. pop element from stack
+	 * 2. return head 
+	 * 
+	 */
+	public Node pop() {
+		System.out.println("Popped Element is : "+head.data );
+		head = head.next;
+		return head;
+	}
+	
 }

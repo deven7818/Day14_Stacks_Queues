@@ -24,6 +24,19 @@ public class StackQueueMain {
 		 * Display Stack Elements
 		 */
 		stack.display();
+		
+		/*
+		 * peck and pop all the elements from stack
+		 */
+		stack.peak();
+		stack.pop();
+
+		stack.peak();
+		stack.pop();
+
+		stack.peak();
+		stack.pop();
+		stack.display();
 	}
 
 }
