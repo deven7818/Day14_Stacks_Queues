@@ -37,6 +37,22 @@ public class StackQueueMain {
 		stack.peak();
 		stack.pop();
 		stack.display();
+		
+		/**
+		 * Create Object of queue 
+		 */
+		Queue queue = new Queue();
+		
+		/*
+		 * enqueue elements from queue 
+		 */
+		queue.enQueue(56);
+		queue.enQueue(30);
+		queue.enQueue(70);
+		
+		System.out.println("Queue front " +queue.front.qKey);
+
+		System.out.println("Queue rear " +queue.rear.qKey);
 	}
 
 }
