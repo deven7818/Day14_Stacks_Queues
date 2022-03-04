@@ -49,10 +49,19 @@ public class StackQueueMain {
 		queue.enQueue(56);
 		queue.enQueue(30);
 		queue.enQueue(70);
+		queue.printList();
 		
 		System.out.println("Queue front " +queue.front.qKey);
 
 		System.out.println("Queue rear " +queue.rear.qKey);
+		
+		
+
+		/*
+		 * deleting element from queue
+		 */
+		queue.deleteFront();
+		queue.printList();
 	}
 
 }
