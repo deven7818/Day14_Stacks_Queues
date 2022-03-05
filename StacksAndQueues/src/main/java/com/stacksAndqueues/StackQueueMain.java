@@ -14,7 +14,7 @@ public class StackQueueMain {
 		Stack stack = new Stack();
 		
 		/*
-		 * Added Elements to stack
+		 * Added Elements to stack.
 		 */
 		stack.addElement(56);
 		stack.addElement(30);
@@ -36,6 +36,9 @@ public class StackQueueMain {
 
 		stack.peak();
 		stack.pop();
+		/*
+		 * Display Stack
+		 */
 		stack.display();
 		
 		/**
